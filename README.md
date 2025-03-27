@@ -31,7 +31,7 @@ cd server
 npm install
 ```
 
-#### Frontend (Client)
+#### Frontend (Client) -  To be Continue 
 ```bash
 cd ../client
 npm install
@@ -53,7 +53,7 @@ cd server
 npm start
 ```
 
-#### Start the frontend
+#### Start the frontend - To be Continue 
 ```bash
 cd client
 npm start
