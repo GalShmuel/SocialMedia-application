@@ -1,6 +1,6 @@
-
 import UserModel from "../Models/userModel.js";
 import bcrypt from "bcrypt"
+
 // get a user 
 export const getUser = async (req, res) => {
     const id = req.params.id;
@@ -40,7 +40,7 @@ export const updateUser = async (req, res) => {
         }
     }
     else {
-        res.status(403).json("Unauthorized to update this user- You can update your own profile")
+        res.status(403).json("Unauthorized to update this user- You can't update your own profile")
     }
 }
 
