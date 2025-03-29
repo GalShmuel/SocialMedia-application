@@ -38,10 +38,8 @@ npm install
 ```
 
 ### 3️⃣ Set up environment variables  
-Create a `.env` file inside the `server` directory and add:
 ```
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
 PORT=5000
 ```
 
@@ -58,7 +56,7 @@ npm start
 cd client
 npm start
 ```
-The frontend will be available at `http://localhost:3000` and the backend at `http://localhost:5000`.
+The frontend will be available at `http://localhost:8000` and the backend at `http://localhost:5000`.
 
 ## 📌 Future Improvements
 - Add a Frontend side
