@@ -38,10 +38,8 @@ npm install
 ```
 
 ### 3️⃣ Set up environment variables  
-Create a `.env` file inside the `server` directory and add:
 ```
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
 PORT=5000
 ```
 
