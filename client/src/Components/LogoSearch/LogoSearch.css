@@ -30,3 +30,12 @@ s-icon:hover {
     background: linear-gradient(106.23deg, #7AB2D3, #b9e5e8 100%);
     cursor: pointer;
 }
+
+
+.ProfileCard>span{
+    font-weight: bold;
+    color: rgb(85, 128, 137) ;
+    align-self: center;
+    margin-bottom: 1rem;
+    cursor:pointer;
+}

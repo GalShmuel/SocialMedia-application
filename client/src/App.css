@@ -11,7 +11,7 @@
   --photo: #4CB256;
   --video: #4A4EB7;
   --location: #EF5757;
-  --shedule: #E1AE4A;
+  --Schedule: #E1AE4A;
 }
 
 .App {
@@ -28,4 +28,26 @@
   border-radius: 50%;
   background: #A6DDF0;
   filter: blur(72px)
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--buttonBg);
+  transition: all 100ms ease-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--blue);
+  background: transparent;
+  border: 2px solid var(--blue)
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

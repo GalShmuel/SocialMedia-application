@@ -1,0 +1,17 @@
+.RightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.NavIcons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.r-button {
+    height: 2.5rem;
+    width: 65%;
+    align-self: center;
+}
