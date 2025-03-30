@@ -5,9 +5,10 @@
     position: relative;
     gap: 1rem;
     overflow-x: clip;
-    background: var(--cardColor);
+    background-color: var(--cardColor);
 }
 
+/* Profile Images */
 .ProfileImages {
     position: relative;
     display: flex;
@@ -18,23 +19,26 @@
 
 .ProfileImages>img:nth-of-type(1) {
     width: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
 .ProfileImages>img:nth-of-type(2) {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     position: absolute;
-    bottom: -2rem;
+    bottom: -3rem;
     box-shadow: var(--profileShadow);
 }
 
+/* Profile Name */
 .ProfileName {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    /* gap: 10px; */
+    gap: 10px;
 }
 
 .ProfileName>span:nth-of-type(1) {
@@ -47,7 +51,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 
 .followStatus>hr {
@@ -57,7 +61,7 @@
 
 .followStatus>div {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     width: 80%;
     justify-content: space-around;
     align-items: center;
@@ -66,7 +70,7 @@
 .follow {
     display: flex;
     flex-direction: column;
-    /* gap: 0.4rem; */
+    gap: 0.4rem;
     align-items: center;
     justify-content: center;
 }
@@ -82,5 +86,5 @@
 
 .vl {
     height: 150%;
-    border-left: 1px solid var(--hrColor);
+    border-left: 2px solid var(--hrColor);
 }

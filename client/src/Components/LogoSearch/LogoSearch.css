@@ -1,13 +1,13 @@
 .LogoSearch {
-    gap: 0.75rem;
     display: flex;
+    gap: 0.75rem;
 }
 
 .Search {
     display: flex;
     background-color: var(--inputColor);
-    border: 10px;
-    padding: 5px
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .Search>input {
@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(106.23deg, #b9e5e8, #7AB2D3 100%);
+    background: linear-gradient(106.23deg, #b9e5e8 0%, #7AB2D3 100%);
     border-radius: 5px;
     padding: 4px;
     color: white;
@@ -31,11 +31,10 @@ s-icon:hover {
     cursor: pointer;
 }
 
-
-.ProfileCard>span{
+.ProfileCard>span {
     font-weight: bold;
-    color: rgb(85, 128, 137) ;
+    color: rgb(85, 128, 137);
     align-self: center;
     margin-bottom: 1rem;
-    cursor:pointer;
+    cursor: pointer;
 }

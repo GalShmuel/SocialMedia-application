@@ -51,3 +51,12 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+.button:disabled {
+  background: silver;
+  pointer-events: none;
+}
