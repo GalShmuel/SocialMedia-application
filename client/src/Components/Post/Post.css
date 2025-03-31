@@ -9,7 +9,7 @@
 }
 
 .Post>img {
-    width: 100%;
+    width: 55%;
     max-height: 20rem;
     object-fit: cover;
     border-radius: 0.5rem;

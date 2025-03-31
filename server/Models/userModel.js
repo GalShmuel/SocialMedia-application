@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 const UserSchema = mongoose.Schema(
+    // Required fields
     {
         username: {
             type: String,
@@ -16,12 +17,13 @@ const UserSchema = mongoose.Schema(
         },
         lastname: {
             type: String,
-            require:true
+            require: true
         },
         isAdmin: {
             type: Boolean,
             default: false,
         },
+        // Optional fields
         profilePicture: String,
         coverPicture: String,
         about: String,
@@ -29,10 +31,11 @@ const UserSchema = mongoose.Schema(
         worksAt: String,
         relationship: String,
         followers: [],
-        following:[]
+        following: []
     },
-    { timestamps: true }
+    { timestamps: true } // Automatically adds createdAt and updatedAt fields
 )
 
+// Create the User model based on the schema
 const UserModel = mongoose.model("Users", UserSchema);
 export default UserModel;

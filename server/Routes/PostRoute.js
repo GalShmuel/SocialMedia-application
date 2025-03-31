@@ -1,7 +1,7 @@
 import express from 'express';
 import { createPost, getPost, updatePost, deletePost, likePost, getTimelinePosts } from '../Controllers/postController.js';
 
-const router = express.Router();
+const router = express.Router(); // Create a new router instance
 
 router.post('/', createPost)
 router.get('/:id', getPost)

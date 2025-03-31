@@ -8,14 +8,15 @@ import UserRoute from './Routes/UserRoute.js';
 import PostRoute from './Routes/PostRoute.js';
 
 // Routes
-const app = express();
-dotenv.config();
+const app = express(); // Create a new express app
+dotenv.config(); // Load environment variables from .env file
 
-// Middleware
-app.use(bodyParser.json({ limit: '30mb', extended: true }));
-app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
-app.use(cors());
+// Middleware configuration
+app.use(bodyParser.json({ limit: '30mb', extended: true })); // Parse JSON with size limit
+app.use(bodyParser.urlencoded({ limit: '30mb', extended: true })); // Parse URL-encoded data
+app.use(cors()); // Enable CORS for all origins
 
+// Connect to MongoDB and start the server
 mongoose.connect(process.env.MONGO_DB)
     .then(() =>
         app.listen(process.env.PORT, () =>
