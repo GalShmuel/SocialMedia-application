@@ -1,6 +1,6 @@
 import express from 'express';
 import { deleteUser, followUser, unFollowUser, getUser, updateUser } from '../Controllers/UserController.js';
-const router = express.Router();
+const router = express.Router(); // Create a new router instance
 
 router.get('/:id', getUser)
 router.put('/:id', updateUser)

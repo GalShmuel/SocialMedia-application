@@ -1,6 +1,11 @@
+// Importing axios to make HTTP requests to the backend API
 import axios from 'axios';
 
+// Creating an instance of axios with the base URL for the API
 const API = axios.create({ baseURL: 'http://localhost:8000' });
 
+// Function to handle login request, sending the form data to the backend API
 export const logIn = (formData) => API.post('/auth/login', formData);
-export const signUp = (formData) => API.post('/auth/register', formData); 
+
+// Function to handle signup request, sending the form data to the backend API
+export const signUp = (formData) => API.post('/auth/register', formData);

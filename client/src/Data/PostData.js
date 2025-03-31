@@ -1,28 +1,31 @@
-import img1 from "../img/coverPic.jpg"
+// import img1 from "../img/coverPic.jpg"
+import person1 from "../img/person1.jpg"
+import person3 from "../img/person3.jpg"
+import person4 from "../img/person4.jpg"
 
 
 export const PostsData = [
     {
-        img: img1,
-        name: 'Tzuya',
+        img: person1,
+        name: 'Andrew Thomas',
         desc: "Happy new Year",
-        likes: 2000,
+        likes: 2851,
         liked: true
 
     },
     {
-        img: img1,
-        name: 'Liav',
-        desc: "Happy2 new Year",
-        likes: 3000,
+        img: person3,
+        name: 'Emily Dawson',
+        desc: "Liav says Hi :)",
+        likes: 3891,
         liked: true
 
     },
     {
-        img: img1,
+        img: person4,
         name: 'Gal',
-        desc: "Happy3 new Year",
-        likes: 4000,
+        desc: "Gal says Hi :)",
+        likes: 4142,
         liked: false
 
     },
